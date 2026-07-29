@@ -15,8 +15,39 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Adon Renji | Software Developer & MCA Graduate",
-  description: "Portfolio of Adon Renji — Software Developer, MCA Graduate, and Full-Stack Engineer.",
+  metadataBase: new URL("https://adonrenji.dev"),
+  title: "Adon Renji | Software Developer & Full-Stack Engineer",
+  description: "Portfolio of Adon Renji, a passionate Software Developer and MCA Graduate specializing in modern web development, scalable backends, and sleek user interfaces.",
+  keywords: ["Adon Renji", "Software Developer", "Full-Stack Engineer", "React", "Next.js", "Web Development", "Portfolio"],
+  authors: [{ name: "Adon Renji", url: "https://adonrenji.dev" }],
+  creator: "Adon Renji",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://adonrenji.dev",
+    title: "Adon Renji | Software Developer",
+    description: "Portfolio of Adon Renji, a passionate Software Developer and MCA Graduate.",
+    siteName: "Adon Renji Portfolio",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Adon Renji - Software Developer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Adon Renji | Software Developer",
+    description: "Portfolio of Adon Renji, a passionate Software Developer and MCA Graduate.",
+    images: ["/og-image.png"],
+    creator: "@adonrenji",
+  },
+  icons: {
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
+  },
 };
 
 export default function RootLayout({
