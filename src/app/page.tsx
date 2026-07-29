@@ -8,6 +8,8 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import ThemeToggle from "./components/ThemeToggle";
+import FloatingSocials from "./components/FloatingSocials";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function Home() {
   return (
@@ -47,8 +49,10 @@ export default function Home() {
         </div>
       </footer>
 
-      {/* Floating Theme Toggle */}
+      {/* Global Floating Elements */}
+      <FloatingSocials />
       <ThemeToggle />
+      <ScrollToTop />
     </div>
   );
 }
