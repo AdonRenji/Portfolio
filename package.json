@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "email": "email dev -d src/emails -p 3001"
   },
   "dependencies": {
     "@react-email/components": "^1.0.12",
@@ -26,6 +27,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.12",
+    "react-email": "^6.9.1",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
