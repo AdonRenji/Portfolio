@@ -3,7 +3,8 @@
 import Hero from "./components/Hero";
 import Experience from "./components/Experience";
 import TechSkills from "./components/TechSkills";
-import { FolderGit2, Mail } from "lucide-react";
+import Projects from "./components/Projects";
+import { Mail } from "lucide-react";
 
 export default function Home() {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
@@ -78,51 +79,8 @@ export default function Home() {
         {/* Technical Skills Showcase */}
         <TechSkills />
 
-        {/* Projects Showcase Placeholder Section */}
-        <section id="projects" className="py-24 relative overflow-hidden border-t border-zinc-900 bg-[#060419]">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-indigo-500/5 rounded-full blur-[100px] pointer-events-none" />
-          <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 relative z-10">
-            <div className="flex flex-col items-center text-center mb-16 space-y-3">
-              <span className="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/25 uppercase tracking-wider">
-                My Work
-              </span>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
-                Featured Projects
-              </h2>
-              <div className="w-12 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full mt-2" />
-              <p className="text-zinc-400 max-w-lg font-light pt-2">
-                A selection of applications built with modern frontend frameworks and robust backend services.
-              </p>
-            </div>
-
-            {/* Showcase Cards Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[1, 2, 3].map((num) => (
-                <div 
-                  key={num} 
-                  className="group rounded-2xl glass-panel border border-white/5 p-6 hover:border-indigo-500/30 transition-all duration-300 hover:shadow-[0_10px_30px_rgba(99,102,241,0.05)] hover:-translate-y-1"
-                >
-                  <div className="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-6 group-hover:bg-indigo-500 group-hover:text-white transition-colors duration-300">
-                    <FolderGit2 className="h-6 w-6" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-white group-hover:text-indigo-300 transition-colors duration-200">
-                    Project Showcase {num}
-                  </h3>
-                  <p className="text-sm text-zinc-400 mt-3 font-light leading-relaxed">
-                    A beautiful, responsive web application demonstrating modern development principles, clean architecture, and standard optimizations.
-                  </p>
-                  <div className="flex items-center gap-2 mt-6 text-xs font-mono text-zinc-500">
-                    <span>React</span>
-                    <span>•</span>
-                    <span>Next.js</span>
-                    <span>•</span>
-                    <span>Tailwind CSS</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        {/* Projects Showcase */}
+        <Projects />
 
         {/* Contact Me Placeholder Section */}
         <section id="contact" className="py-24 relative overflow-hidden border-t border-zinc-900 bg-[#030014]">
