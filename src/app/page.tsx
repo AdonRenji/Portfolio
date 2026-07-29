@@ -2,6 +2,7 @@
 
 import Hero from "./components/Hero";
 import Experience from "./components/Experience";
+import TechSkills from "./components/TechSkills";
 import { FolderGit2, Mail } from "lucide-react";
 
 export default function Home() {
@@ -30,6 +31,13 @@ export default function Home() {
               className="text-sm font-medium text-zinc-300 hover:text-white transition-colors"
             >
               Experience
+            </a>
+            <a 
+              href="#skills" 
+              onClick={(e) => handleScroll(e, "skills")} 
+              className="text-sm font-medium text-zinc-300 hover:text-white transition-colors"
+            >
+              Skills
             </a>
             <a 
               href="#projects" 
@@ -66,6 +74,9 @@ export default function Home() {
 
         {/* Experience & Education Timeline */}
         <Experience />
+
+        {/* Technical Skills Showcase */}
+        <TechSkills />
 
         {/* Projects Showcase Placeholder Section */}
         <section id="projects" className="py-24 relative overflow-hidden border-t border-zinc-900 bg-[#060419]">
