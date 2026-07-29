@@ -4,7 +4,7 @@ import Hero from "./components/Hero";
 import Experience from "./components/Experience";
 import TechSkills from "./components/TechSkills";
 import Projects from "./components/Projects";
-import { Mail } from "lucide-react";
+import Contact from "./components/Contact";
 
 export default function Home() {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
@@ -82,35 +82,8 @@ export default function Home() {
         {/* Projects Showcase */}
         <Projects />
 
-        {/* Contact Me Placeholder Section */}
-        <section id="contact" className="py-24 relative overflow-hidden border-t border-zinc-900 bg-[#030014]">
-          <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-purple-500/5 rounded-full blur-[100px] pointer-events-none" />
-          <div className="max-w-4xl mx-auto px-6 text-center relative z-10 space-y-8">
-            <div className="flex flex-col items-center space-y-3">
-              <span className="px-3 py-1 rounded-full text-xs font-semibold bg-purple-500/10 text-purple-300 border border-purple-500/25 uppercase tracking-wider">
-                Get In Touch
-              </span>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
-                Let&apos;s Build Something Together
-              </h2>
-              <div className="w-12 h-1 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full mt-2" />
-            </div>
-
-            <p className="text-zinc-400 max-w-lg mx-auto font-light leading-relaxed">
-              I am currently open to new opportunities, collaborations, or just chatting about interesting tech. Feel free to reach out directly.
-            </p>
-
-            <div className="inline-flex">
-              <a
-                href="mailto:contact@example.com"
-                className="group flex items-center justify-center gap-3 h-14 px-8 rounded-2xl font-semibold text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 shadow-[0_4px_20px_rgba(168,85,247,0.2)] hover:shadow-[0_4px_25px_rgba(168,85,247,0.4)] transition-all duration-300 active:scale-[0.98]"
-              >
-                <Mail className="h-5 w-5" />
-                Say Hello
-              </a>
-            </div>
-          </div>
-        </section>
+        {/* Contact Me Form */}
+        <Contact />
       </main>
 
       {/* Footer */}
