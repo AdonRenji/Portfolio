@@ -1,6 +1,7 @@
 "use client";
 
 import Hero from "./components/Hero";
+import Experience from "./components/Experience";
 import { FolderGit2, Mail } from "lucide-react";
 
 export default function Home() {
@@ -23,6 +24,13 @@ export default function Home() {
           
           <nav className="hidden md:flex items-center gap-8">
             <a href="#" className="text-sm font-medium text-zinc-300 hover:text-white transition-colors">Home</a>
+            <a 
+              href="#experience" 
+              onClick={(e) => handleScroll(e, "experience")} 
+              className="text-sm font-medium text-zinc-300 hover:text-white transition-colors"
+            >
+              Experience
+            </a>
             <a 
               href="#projects" 
               onClick={(e) => handleScroll(e, "projects")} 
@@ -55,6 +63,9 @@ export default function Home() {
       <main className="flex-1">
         {/* Animated Hero Section */}
         <Hero />
+
+        {/* Experience & Education Timeline */}
+        <Experience />
 
         {/* Projects Showcase Placeholder Section */}
         <section id="projects" className="py-24 relative overflow-hidden border-t border-zinc-900 bg-[#060419]">
