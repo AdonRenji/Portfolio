@@ -48,7 +48,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-[92vh] flex items-center justify-center overflow-hidden py-16 lg:py-24 hero-bg transition-colors duration-300">
+    <section id="home" className="relative min-h-[92vh] flex items-center justify-center overflow-hidden py-16 lg:py-24 hero-bg transition-colors duration-300">
       {/* Background Tech Grid Overlay */}
       <div className="absolute inset-0 grid-overlay opacity-10 dark:opacity-20 pointer-events-none" />
 
